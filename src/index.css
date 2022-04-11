@@ -1,8 +1,19 @@
 .redtext{
-    color: red;
+    color: rgb(135, 127, 127);
 }
 
 .image{
     height: 400px;
     background-repeat: no-repeat;
+}
+
+#displaytext{
+    color:#efd1c8;
+    background-color: #ffffff;
+}
+
+#root{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
 }

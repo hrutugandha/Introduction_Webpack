@@ -7,26 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/icon.jpeg":
-/*!***********************!*\
-  !*** ./src/icon.jpeg ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"3438e8921dc4828154b149782094e1ec.jpeg\");\n\n//# sourceURL=webpack://Introduction_Webpack/./src/icon.jpeg?");
-
-/***/ }),
 
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./icon.jpeg */ \"./src/icon.jpeg\");\n__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"));\r\n\r\n\r\n\r\nfunction add(a,b){\r\n    return a + b;\r\n}\r\n\r\nconsole.log(add(7,3));\r\n\r\n\r\nlet h1 = document.createElement(\"h1\");\r\nh1.innerHTML = \"I am Very Happy!\";\r\nh1.classList.add('redtext');\r\n\r\nlet img = document.createElement(\"img\");\r\nimg.src = _icon_jpeg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\nimg.classList.add('image')\r\n\r\nlet note = document.getElementById(\"submit\").value;\r\nconsole.log(note);\r\n\r\ndocument.getElementById('root').appendChild(h1);\r\ndocument.getElementById('img').appendChild(img);\r\n\r\n\n\n//# sourceURL=webpack://Introduction_Webpack/./src/index.js?");
+eval("__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"));\r\n//import icon from '../src/icon.png';\r\nlet root = document.getElementById(\"root\");\r\n\r\n\r\nfunction add(a,b){\r\n    return a + b;\r\n}\r\n\r\nconsole.log(add(7,3));\r\n\r\nfunction input(){\r\n\r\n}\r\n\r\nlet h1 = document.createElement(\"h1\");\r\nh1.innerHTML = \"take notes!\";\r\nh1.classList.add('redtext');\r\n\r\nlet text = document.createElement(\"textarea\");\r\ntext.setAttribute(\"type\", \"text\");\r\ntext.setAttribute(\"id\", \"text\");\r\ntext.setAttribute('maxlength', 1000);\r\ntext.setAttribute('cols',40);\r\ntext.setAttribute('rows', 10);\r\ntext.setAttribute('placeholder',\"start typing...\");\r\n\r\nlet button = document.createElement(\"input\");\r\nbutton.setAttribute(\"type\", \"submit\");\r\nbutton.setAttribute(\"placeholder\",\"submit\");\r\n\r\nbutton.onclick = function() {\r\n    console.log(text.value);\r\n    displaytext.innerHTML = text.value;\r\n};\r\n\r\nlet displaytext = document.createElement(\"h3\");\r\ndisplaytext.setAttribute(\"id\", \"displaytext\");\r\n\r\n// var img = new Image();\r\n// img.src = icon;\r\n\r\nroot.append(displaytext,h1,text,button);\r\n\r\n\n\n//# sourceURL=webpack://Introduction_Webpack/./src/index.js?");
 
 /***/ })
 
