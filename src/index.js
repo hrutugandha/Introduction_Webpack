@@ -14,7 +14,7 @@ function input(){
 }
 
 let h1 = document.createElement("h1");
-h1.innerHTML = "take notes!";
+h1.innerHTML = "Take notes!";
 h1.classList.add('redtext');
 
 let text = document.createElement("textarea");
@@ -34,7 +34,7 @@ button.onclick = function() {
     displaytext.innerHTML = text.value;
 };
 
-let displaytext = document.createElement("h3");
+let displaytext = document.createElement("h2");
 displaytext.setAttribute("id", "displaytext");
 
 // var img = new Image();
